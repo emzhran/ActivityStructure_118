@@ -9,8 +9,8 @@ struct AlamatDetail
 
 struct Mahasiswa
 {
-	char NIM[20];
-	char nama[20];
+	char NIM[12];
+	char nama[25];
 	AlamatDetail alamat;
 	int umur;
 };
@@ -18,20 +18,21 @@ struct Mahasiswa
 int main() {
 	Mahasiswa mhs[3];
 
-	for (int i = 0; 1 < 3; i++) {
+	for (int i = 0; i < 3; i++) {
 		cout << "Masukkan NIM :";
-		cin.getline(mhs[i].NIM, 12);
+		cin.getline(mhs[i].NIM,12);
 		cout << "Masukkan Nama :";
-		cin.getline(mhs[i].nama, 25);
+		cin.getline(mhs[i].nama,25);
 		cout << "Alamat :";
 		cout << "\n\tMasukkan Desa :";
-		cin.getline(mhs[i].alamat.desa, 20);
+		cin.getline(mhs[i].alamat.desa,20);
 		cout << "\tMasukkan Kota :";
-		cin.getline(mhs[i].alamat.kota, 20);
+		cin.getline(mhs[i].alamat.kota,20);
 		cout << "Masukkan Umur :";
 		cin >> mhs[i].umur;
 		cin.ignore(1, '\n');
-}
+	}
+
 
 	for (int i = 0; i < 3; i++)
 	{
@@ -41,3 +42,4 @@ int main() {
 		cout << "\nKota = " << mhs[i].alamat.kota;
 		cout << "\nUmur = " << mhs[i].umur;
 	}
+}
