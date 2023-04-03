@@ -8,3 +8,26 @@ struct mahasiswa
 	string alamat;
 	int umur;
 };
+
+int main() {
+	mahasiswa mhs1, mhs2;
+
+	mhs1.NIM = "20220140118";
+	mhs1.nama = "Mohammad Zachran Zachary";
+	mhs1.alamat = "Samarinda";
+	mhs1.umur = 20;
+
+	cout << "Masukkan NIM :";
+	cin >> mhs2.NIM;
+	cout << "Masukkan Nama :";
+	cin >> mhs2.nama;
+	cout << "Masukkan Alamat :";
+	cin >> mhs2.alamat;
+	cout << "Masukkan Umur :";
+	cin >> mhs2.umur;
+
+	cout << "\nNIM = " << mhs1.NIM;
+	cout << "\nNama = " << mhs1.nama;
+	cout << "\nAlamat = " << mhs1.alamat;
+	cout << "\nUmur = " << mhs1.umur;
+}
